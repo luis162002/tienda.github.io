@@ -1,0 +1,511 @@
+/* Comun en todas las paginas */
+
+body {
+    /* Poner la tipografia y un color de fondo */
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../imagenes/image/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2.8vh;
+}
+
+
+/* Menu Cabecera */
+
+div#imgcabecera {
+    width: 100%;
+    height: 60vh;
+    background-image: url(../imagenes/cabecera/pulpo_cabecera.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+img #IconoMenu {
+    width: 30px;
+    height: 30px;
+    border: 1px #4a3c00 solid;
+}
+
+header {
+    /* El header ponerle un ancho */
+    width: 100%;
+    background-color: rgba(1, 1, 1, 0.5);
+    margin-bottom: 30px;
+}
+
+#responsive_menu {
+    /* Ocultar el checbox */
+    display: none;
+}
+
+header label {
+    /* Ubicar el icono y darle un ancho y un alto, ademas ocultarlo ya que abajo lo pondre para que se vea en un espesifico momento */
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-right: 1px black solid;
+}
+
+header label:hover {
+    /*Cuando pasemos el mause y fondo */
+    cursor: pointer;
+    /* cuando al pasar el cursor por el icono el simbolito de raton cambie a una manito */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(160, 148, 148, 0.5);
+}
+
+.menu ul {
+    /* quitar estilos de las tablas y hacer que los links sean flexibles y los coloque en fila */
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    /*Distribuir uniformemente el citio ocupado por los links y los centramos*/
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #00000d;
+}
+
+.menu li:hover {
+    /* Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor*/
+    flex-grow: 1.1;
+    background-color: rgba(1, 0, 0, 0.3);
+}
+
+.menu li a {
+    /*Padding de x=30px y=50px y ponerlos en bloque*/
+    display: block;
+    padding: 30px 50px;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-size: 1.6em;
+}
+
+
+/* Footer(pie) */
+
+footer {
+    /* Color de fond alinee en el centro y le puse distinta tipografia, limpiar el float y un pequeño padding and margin */
+    text-align: center;
+    font-family: Courier, monospace;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    clear: left;
+    /* border: #4a3c00 solid 1px; */
+}
+
+
+/* Fin de Comun en todas las paginas */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Pagina Principal */
+
+main#principal {
+    /* Añadir un ancho , un margen por arriba, alinearlo y que flote a la izquierda */
+    width: 80%;
+    margin-top: 20px;
+    text-align: center;
+    float: left;
+    border: #4a3c00 solid 1px;
+}
+
+main#principal #primera-seccion {
+    /* (Quise hacerla tipo overplay pero necesitaba js y no se usarlo) Ponerle un ancho, poner imagen de fondo, posicionarla,ponerle borde */
+    background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-style: italic;
+    text-decoration: violet;
+    text-align: center;
+}
+
+#oferta {
+    padding: 2px;
+}
+
+#oferta a {
+    text-decoration: none;
+}
+
+#oferta a:hover {
+    cursor: pointer;
+    background-color: mediumblue;
+    color: #ffffff;
+}
+
+main#principal #segunda-seccion .imagenes-sec2 {
+    /* le doy alto y ancho a las images, posicion statica y las acomode un poco y un borde transparente */
+    width: 80%;
+}
+
+main#principal #segunda-seccion {
+    /* Tipografia */
+    font-size: 15px;
+    font-family: monospace;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+main#principal section div.cajas_peques {
+    /* Ubicar un poco el div para que se parescan entre si y ponerles un ancho mx */
+    padding-top: 5px;
+    width: 28%;
+}
+
+aside {
+    /* Hacerle flotar a la derecha, poner padding/margin, un borde y posicionarlo estatico */
+    float: right;
+    padding: 2px;
+    border: #4a3c00 solid 1px;
+}
+
+.lateral ul {
+    /* quitar estilos de las tablas y hacer que los links sean flexibles y los coloque en fila */
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.lateral li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.lateral li a {
+    /*Padding de x=30px y=50px*/
+    margin: 30px 50px;
+    color: #00000d;
+    text-decoration: none;
+}
+
+
+/* Fin de la Pagina Principal */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/*--- Comienzo Pagina Cuenta ---*/
+
+main#cuenta {
+    width: 100%;
+}
+
+main#cuenta form {
+    text-align: left;
+}
+
+main#cuenta form fieldset legend {
+    background-color: #b89809;
+    padding: 5px;
+    border: 1px solid #4a3c00;
+}
+
+
+/* Fin Pagina Cuenta */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Comienzo pagina Contacto */
+
+main#contactos {
+    width: 100%;
+    text-align: left;
+    clear: left;
+}
+
+main#contactos section div p {
+    padding-left: 30px;
+}
+
+main#contactos section div p a {
+    text-decoration: none;
+    color: #363696;
+    border-bottom: 1px solid;
+}
+
+main#contactos h1 {
+    padding-left: 5px;
+}
+
+main#contactos img {
+    padding: 10px;
+}
+
+
+/* Fin pagina Contacto */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Comienzo pagina Todos los productos */
+
+main#todosproductos section {
+    width: 95%;
+}
+
+main#todosproductos section h1 {
+    text-align: center;
+}
+
+main#todosproductos section div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+main#todosproductos section div div {
+    width: 30%;
+    margin: 1px;
+    padding: 1px;
+}
+
+main#todosproductos section div div p {
+    width: 98%;
+    background-color: white;
+}
+
+main#todosproductos section div div p img {
+    width: 95%
+}
+
+main#todosproductos section div div p a {
+    font-size: 5vh;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: #00000d;
+    border-radius: 10px;
+}
+
+main#todosproductos section div div p a:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+}
+
+
+/* Fin pagina Todos los productos */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* Empieza Comun en todos los productos "separados"*/
+
+main#aceit section,
+main#boller section,
+main#carnic section,
+main#lact section,
+main#maris section {
+    text-align: center;
+    margin: 3px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+main#aceit section article img,
+main#boller section article img,
+main#carnic section article img,
+main#lact section article img,
+main#maris section article img {
+    /* Le baje un 30% al tamaño original de la imagen */
+    width: 70%;
+}
+
+main#aceit section article,
+main#boller section article,
+main#carnic section article,
+main#lact section article,
+main#maris section article {
+    /* Le puse un color de fondo lo flote a la izquierda un margen de 1 y una anchura del 33% */
+    background-color: #ffffff;
+}
+
+main#aceit h1,
+main#boller h1,
+main#carnic h1,
+main#lact h1,
+main#maris h1 {
+    /* Alinee el texto centrado */
+    text-align: center;
+}
+
+main#aceit section a,
+main#boller section a,
+main#carnic section a,
+main#lact section a,
+main#maris section a {
+    /* Quite la decoracion de los links y le puse un color de fondo rgba */
+    text-decoration: none;
+    background-color: rgba(0, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+main#aceit section a:hover,
+main#boller section a:hover,
+main#carnic section a:hover,
+main#lact section a:hover,
+main#maris section a:hover {
+    /* Color de fondo transparente */
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+main#aceit h2,
+main#boller h2,
+main#carnic h2,
+main#lact h2,
+main#maris h2 {
+    text-align: center;
+}
+
+
+/* fin Comun en todos los productos*/
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* @media editions version tablet?¿ */
+
+
+/* Cabecera */
+@media (max-width: 1121px) {
+    aside{
+        display: none;
+    }
+    main#principal {
+        font-family: monospace;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        padding: 1px;
+      }
+}
+
+@media (max-width: 768px) {
+    body{
+        background-image: url(../imagenes/image/fondo.jpg);
+        width: 100%;
+       background-size: contain;
+       background-repeat: repeat-y;
+    }
+    div#imgcabecera {
+        width: 100%;
+        height:35vh;
+      }
+    /*Cuando el ancho maximo de la pantalla sea 768 pixeles ocurrira todo lo que pondre dentro*/
+    header label {
+        /* Quitamos el display none por el block, patra mostrarlos en bloque */
+        display: block;
+    }
+    .menu {
+        /* Posicionamos absolutamente y ponemos color de fondo, margin -70 para que no aparezca en pantalla y mostrarlo al hacer click en el menu*/
+        position: absolute;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 1s;
+    }
+    .menu ul {
+        /* Posicionamos absolutamente y ponemos color de fondo */
+        flex-direction: column;
+    }
+    .menu li {
+        /* Añadir un borde */
+        border-top: 1px solid black;
+    }
+    .menu li a {
+        /* Quitar la decoracion de los links, añadirle color de letra y ponerle padding */
+        padding: 15px 40px;
+        text-decoration: none;
+    }
+    #responsive_menu:checked~.menu {
+        /* Cuando al icono este checekd buscara asta encontrar la clase menu, Que es la clase que oculte antes con -70*/
+        margin: 0;
+    }
+    /* Cabecera Fin */
+    /* Pagina Principal */
+    main#principal #primera-seccion {
+        /* darle ancho poner una imagen de fondo, centrarla, darle una fuente y darle un tamaño de letra */
+        width: 85%;
+        background-image: url(../imagenes/productos/mariscos/gambaGrande.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        font-style: italic;
+        text-decoration: violet;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+    main#principal {
+        /*Cambie el width de 60% a 100% el resto es igual que la version grande */
+        font-family: monospace;
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+        padding: 1px;
+    }
+    main#principal #segunda-seccion .imagenes-sec2 {
+        /* Dar ancho/alto a las imagenes y posicionarlas estaticamente */
+        width: 80%;
+        position: static;
+        top: 10px;
+        left: -40px;
+    }
+    main#principal #segunda-seccion {
+        /* Ponerles una tipografia distinta */
+        font-family: monospace;
+        font-size: 1.1vh;
+    }
+    section div {
+        /* Ubicar los div */
+        padding-top: 5px;
+        vertical-align: middle;
+        margin: 5px;
+    }
+    /*Empieza aside "Pagina Principal"*/
+    aside {
+        /* Ocultar el menu con las Categorias */
+        display: none;
+    }
+    /* Termina aside */
+    /* Termina Pagina Principal */
+    /* Pagina todos los productos */
+    main#todosproductos section {
+        width: 100%;
+    }
+    main#todosproductos section div div {
+        width: 48%;
+    }
+    /* fin Pagina todos los productos */
+    /* Empieza producto */
+    main section article {
+        /* Cambie la anchura del 33% a 48%*/
+        width: 47%;
+    }
+    /* Fin producto */
+
+}
+/* @media editions Fin */
