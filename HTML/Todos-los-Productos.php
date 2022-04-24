@@ -36,7 +36,7 @@
                 require_once '../PHP/categorias.php';
 
                 //Llamar a la funcion de categorias
-                categorias();
+                productos('CATEGORIAS');
 
                 ?>
 
