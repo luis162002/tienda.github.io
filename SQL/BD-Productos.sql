@@ -35,8 +35,28 @@ CREATE TABLE `ACEITES` (
 
 -- Creacion de los productos de aceites
 INSERT INTO `ACEITES` (`id`, `src`,`precio`, `nome`, `href`, `alt`) VALUES 
-  (1,'../imagenes/productos/aceite/Redimencion_Aceite-oliva-intenso.jpg','13.50€','Aceite de oliva Intenso','#','Imagen de Aceite oliva intenso'),
-  (2,'../imagenes/productos/aceite/Redimencion_aceite-prisma.jpg','17.50€','Aceite Prisma','#','Imagen aceite prisma'),
-  (3,'../imagenes/productos/aceite/Redimencion_Pago-de-Visarejos.png','11.50€','Aceite pago de visarejos','#','Imagen de aceite pago de visarejos');
+  (1,'../imagenes/productos/aceite/Redimencion_Aceite-oliva-intenso.jpg','13.50','Aceite de oliva Intenso','#','Imagen de Aceite oliva intenso'),
+  (2,'../imagenes/productos/aceite/Redimencion_aceite-prisma.jpg','17.50','Aceite Prisma','#','Imagen aceite prisma'),
+  (3,'../imagenes/productos/aceite/Redimencion_Pago-de-Visarejos.png','11.50','Aceite pago de visarejos','#','Imagen de aceite pago de visarejos');
+  
+-- <------------------------------------->
+
+-- Creacion de la tabala BOLLERIA
+CREATE TABLE `BOLLERIA` (
+`id` int(11) NOT NULL,
+`precio` int(11) NOT NULL,
+  `src` char(255) NOT NULL default '../imagenes/NOIMAGEN.png',
+  `nome` char(255) NOT NULL default 'Sin nombre',
+  `href` char(255) default '#',
+  `alt` char(255) NOT NULL default 'Sin descripcion',
+  PRIMARY KEY  (`id`)
+);
+
+-- Creacion de los productos de aceites
+INSERT INTO `BOLLERIA` (`id`, `src`,`precio`, `nome`, `href`, `alt`) VALUES 
+  (1,'../imagenes/productos/galletaspan/Redimencion_burguer.jpg','3.50','Pan de amburguesa','#','Imagen de Pan de amburguesa'),
+  (2,'../imagenes/productos/galletaspan/Redimencion_choconaranja.png','2.50','Chocolate naranja','#','Imagen de Chocolate naranja'),
+  (3,'../imagenes/productos/galletaspan/Redimencion_molde.jpg','2.50','Pan Molde','#','Imagen de Pan Molde'),
+  (4,'../imagenes/productos/galletaspan/Redimencion_HOTDOG.jpg','2.10','Pan de HotDog','#','Imagen de Pan de HotDog');
   
 -- <------------------------------------->

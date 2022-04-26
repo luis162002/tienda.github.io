@@ -14,7 +14,7 @@
     <link rel="icon" href="../imagenes/cabecera/pulpo.png" type="image/png">
     <link href="../CSS/normalize.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="../CSS/proyecto.css" rel="stylesheet" type="text/css" media="screen" />
-    <script src="../JS/JS.js"></script>
+    <link rel="stylesheet" href="../CSS/menuIndex.css">
 </head>
 
 <body>
@@ -52,6 +52,9 @@
     ?>
     </footer>
     <!--End  Pie de Pag -->
+    <!-- Llamo a los js -->
+    <!-- <script src="../JS/JS.js"></script> -->
+    <script src="../JS/menuIndex.js"></script>
 </body>
 
 </html>

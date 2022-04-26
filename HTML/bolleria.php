@@ -18,28 +18,28 @@
 </head>
 
 <body>
-<?php
+    <?php
     require_once '../PHP/menu.php';
     ?>
 
-    <main id="aceit">
-        <h1>Aceites</h1>
+    <main id="boller">
+        <h1>Bolleria</h1>
         <section>
-        <?php
-                //Incluir el documento donde tengo las funciones de php
-                require_once '../PHP/categorias.php';
+             <?php
+                    //Incluir el documento donde tengo las funciones de php
+                    require_once '../PHP/categorias.php';
 
-                //Llamar a la funcion de categorias
-                productos('aceites');
+                    //Llamar a la funcion de categorias
+                    productos('bolleria');
 
-                ?>
+                    ?>
         </section>
     </main>
     <footer>
         <!-- Pie de Pag -->
-        <?php
-        require_once '../PHP/footer.php';
-        ?>
+        <script>
+            footer();
+        </script>
     </footer>
     <!--End  Pie de Pag -->
       <!-- Llamo a los js -->

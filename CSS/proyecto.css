@@ -21,48 +21,15 @@ div#imgcabecera {
     background-size: cover;
 }
 
-img #IconoMenu {
-    width: 30px;
-    height: 30px;
-    border: 1px #4a3c00 solid;
-}
-
-header {
-    /* El header ponerle un ancho */
+/* header {
+    El header ponerle un ancho 
     width: 100%;
     background-color: rgba(1, 1, 1, 0.5);
     margin-bottom: 30px;
 }
 
-#responsive_menu {
-    /* Ocultar el checbox */
-    display: none;
-}
-
-header label {
-    /* Ubicar el icono y darle un ancho y un alto, ademas ocultarlo ya que abajo lo pondre para que se vea en un espesifico momento */
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-    border-right: 1px black solid;
-}
-
-header label:hover {
-    /*Cuando pasemos el mause y fondo */
-    cursor: pointer;
-    /* cuando al pasar el cursor por el icono el simbolito de raton cambie a una manito */
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.menu {
-    position: fixed;
-    width: 100%;
-    background-color: rgba(160, 148, 148, 0.5);
-}
-
 .menu ul {
-    /* quitar estilos de las tablas y hacer que los links sean flexibles y los coloque en fila */
+     quitar estilos de las tablas y hacer que los links sean flexibles y los coloque en fila 
     margin: 0;
     list-style: none;
     padding: 0;
@@ -71,26 +38,27 @@ header label:hover {
 }
 
 .menu li {
-    /*Distribuir uniformemente el citio ocupado por los links y los centramos*/
+    Distribuir uniformemente el citio ocupado por los links y los centramos
     flex-grow: 1;
     text-align: center;
     border: 1px solid #00000d;
+     background-color: rgba(1, 0, 0, 0.3);
 }
 
 .menu li:hover {
-    /* Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor*/
+     Al pasar por encima de el menu el la opcion, que aumente el tamaño de su contenedor
     flex-grow: 1.1;
     background-color: rgba(1, 0, 0, 0.3);
 }
 
 .menu li a {
-    /*Padding de x=30px y=50px y ponerlos en bloque*/
+    Padding de x=30px y=50px y ponerlos en bloque
     display: block;
     padding: 30px 50px;
     color: #0a0a0a;
     text-decoration: none;
     font-size: 1.6em;
-}
+} */
 
 
 /* Footer(pie) */
@@ -175,6 +143,7 @@ aside {
     float: right;
     padding: 2px;
     border: #4a3c00 solid 1px;
+    width: 15%;
 }
 
 .lateral ul {
@@ -283,7 +252,7 @@ main#todosproductos section div div {
 }
 
 main#todosproductos section div div p {
-    width: 98%;
+    /* width: 98%; */
     background-color: white;
 }
 

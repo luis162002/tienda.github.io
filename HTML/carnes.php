@@ -14,13 +14,13 @@
     <link rel="icon" href="../imagenes/cabecera/pulpo.png" type="image/png">
     <link href="../CSS/normalize.css" rel="stylesheet" type="text/css" media="screen" />
     <link href="../CSS/proyecto.css" rel="stylesheet" type="text/css" media="screen" />
-    <script src="../JS/JS.js"></script>
+    <link rel="stylesheet" href="../CSS/menuIndex.css">
 </head>
 
 <body>
-    <script>
-        displayMenu('h');
-    </script>
+<?php
+    require_once '../PHP/menu.php';
+    ?>
 
     <main id="carnic">
         <h1>Carnes</h1>

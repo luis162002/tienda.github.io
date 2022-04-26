@@ -27,7 +27,7 @@
       type="text/css"
       media="screen"
     />
-    <script src="JS/JS.js"></script>
+    <link rel="stylesheet" href="./CSS/menuIndex.css">
   </head>
 
   <body>
@@ -84,16 +84,10 @@
     </main>
     <!-- Se cierra el main -->
     <aside>
-      <nav class="lateral">
-        <h2>Categorias</h2>
-        <ul class="navegacion-lateral">
-          <li><a href="HTML/bolleria.html">Galletas/Pan</a></li>
-          <li><a href="HTML/carnes.html">Carnes</a></li>
-          <li><a href="HTML/mariscos.html">Marisco</a></li>
-          <li><a href="HTML/aceites.html">Aceites</a></li>
-          <li><a href="HTML/lacteos.html">Lacteos</a></li>
-        </ul>
-      </nav>
+      <div>
+        <h1>Espacio publicitario</h1>
+        <p>Informacion de publicidad</p>
+      </div>
     </aside>
     <!-- Pie de Pag -->
     <footer>
@@ -102,5 +96,8 @@
     ?>
     </footer>
     <!--End  Pie de Pag -->
+    <!-- LLamdo de JavaScript -->
+     <!-- <script src="JS/JS.js"></script> -->
+    <script src="./JS/menuIndex.js"></script>
   </body>
 </html>
